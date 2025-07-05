@@ -16,7 +16,7 @@ app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 app.use(
   cors({
-    origin: ['http://localhost:5173', 'http://localhost:5174', 'https://stalwart-dragon-ef825f.netlify.app'],
+    origin: ['http://localhost:5173', 'http://localhost:5174', 'https://stalwart-dragon-ef825f.netlify.app', 'https://joyful-snickerdoodle-918b2a.netlify.app/login' ],
     methods: ['GET' , 'PUT' , 'POST' , 'DELETE'],
     credentials: true,
   })
